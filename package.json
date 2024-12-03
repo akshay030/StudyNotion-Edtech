@@ -1,0 +1,11 @@
+{
+ "scripts": {
+  "start": "concurrently \"npm run dev --prefix studynotion\" \"node server/index.js\"",
+  "dev": "echo \"Frontend: Running Vite...\" && npm run dev --prefix studynotion",
+  "backend": "echo \"Backend: Running server...\" && node server/index.js"
+},
+
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
